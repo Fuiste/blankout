@@ -7,6 +7,6 @@ export interface Item {
   count: number;
 }
 
-export const InitialState: State = {
-  items: [],
+export const initialState: State = {
+  items: [{ name: "Test", count: 2 }, { name: "Rudy", count: 42 }],
 };

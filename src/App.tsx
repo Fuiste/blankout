@@ -11,6 +11,7 @@ import {
 } from "@ionic/react";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import { ItemListContainer } from "./containers/item-list-container";
 
 class App extends Component {
   render() {
@@ -20,10 +21,11 @@ class App extends Component {
           <IonContent>
             <IonCard>
               <IonCardHeader>
-                <IonCardSubtitle>Welcome to Ionic</IonCardSubtitle>
-                <IonCardTitle>Running on React</IonCardTitle>
+                <IonCardSubtitle>Welcome to Blankout</IonCardSubtitle>
+                <IonCardTitle>It's a game</IonCardTitle>
               </IonCardHeader>
             </IonCard>
+            <ItemListContainer />
           </IonContent>
         </IonApp>
       </Provider>

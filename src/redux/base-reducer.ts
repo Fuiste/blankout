@@ -1,14 +1,12 @@
-import { State, InitialState } from "./state";
+import { State, initialState } from "./state";
 import { Action } from "./action-types";
 
-export function baseReducer(state: State = InitialState, action: Action) {
+export function baseReducer(state: State = initialState, action: Action) {
   switch (action.type) {
     case "PopItem":
-      state.items.pop();
-      return state;
+      return { ...state };
     case "PushItem":
-      state.items.push(action.item);
-      return state;
+      return { ...state };
     default:
       return state;
   }
